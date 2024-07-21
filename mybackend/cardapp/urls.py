@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 from .views import CardList
 
 urlpatterns = [
-    path('admin', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', CardList.as_view(), name='card-list'),
 ]
 
